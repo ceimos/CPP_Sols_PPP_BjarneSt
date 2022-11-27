@@ -20,4 +20,4 @@ Read More About it in Appendix C.3.2,Chapter 2.2 and Drill of chapter 2
 ```c++
 #include ".\std_lib_facilities.h"
 ```
-- The ".\" tells the computer that it exists in the current working directory.
+- The ".\\" tells the computer that it exists in the current working directory.
