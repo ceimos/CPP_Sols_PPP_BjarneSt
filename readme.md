@@ -24,7 +24,7 @@ Read More About it in Appendix C.3.2,Chapter 2.2 and Drill of chapter 2
 
 ## File Naming Scheme
 prefixes-
-- CH#EX# == Chapter # Ex #
+- CH#EX# == Chapter # Exercise #
 - CH#DR# == Chapter # Drill #
 - CH#TR# == Chapter # TryThis #
-\n postfixes - doesn't matter.
+- postfixes - doesn't matter.
