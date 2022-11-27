@@ -27,4 +27,4 @@ prefixes-
 - CH#EX# == Chapter # Ex #
 - CH#DR# == Chapter # Drill #
 - CH#TR# == Chapter # TryThis #
-postfixes- doesn't matter.
+\n postfixes - doesn't matter.
