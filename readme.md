@@ -15,9 +15,16 @@ Bjarne Stroustrup has not bothered us with it. (That's great, i guess, prevents 
 Read More About it in Appendix C.3.2,Chapter 2.2 and Drill of chapter 2
 
 ## How to use *"std_lib_facilities.h"*
-- Keep it in the folder with you source code.
+- Keep it in the folder with your source code.
 - put this in your code -
 ```c++
 #include ".\std_lib_facilities.h"
 ```
 - The ".\\" tells the computer that it exists in the current working directory.
+
+## File Naming Scheme
+prefixes-
+- CH#EX# == Chapter # Ex #
+- CH#DR# == Chapter # Drill #
+- CH#TR# == Chapter # TryThis #
+postfixes- doesn't matter.
