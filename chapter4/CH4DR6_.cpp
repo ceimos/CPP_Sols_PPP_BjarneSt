@@ -8,15 +8,14 @@ int main()
 
     while(cout<<"Enter a number : " && cin>>i)
     {   
+        if(input_no==1){smaller=i;larger=i;}
         if(i==smaller||i==larger){}
         else if(i<smaller)
         {
-            if(input_no==2){larger=smaller;}//Only needed for the second time.[1] more in the comments below.
             smaller=i;
         }
         else if(i>larger)
         {
-            if(input_no==2){smaller=larger;} //Only needed for the second time.[1] more in the comments below.
             larger=i;
         }
         cout<<"So far Largest Num : "<<larger<<" and Smallest Num : "<<smaller
@@ -37,3 +36,17 @@ int main()
 // PROBLEM TO FIX :-
 // If user repeats value at first few inputs, then the above explained check fails to do, what it is supposed to do
 // FIX IT!!!
+
+// FIXED -
+// The first input is now the value for both smallest and largest number, in first iteration. 
+// No need to keep zero as placeholder because it is not one of the user_inputs.
+
+// The Bug Occured only because - 
+// if the second input is same as the first input, then the check that occurs at second input is useless.
+// in this particular case it should occur at the third input.
+// The root problem is describes below through an example 
+// User Inputs '2' ---> Values become <smallest>=0 and <largest>=2
+// User Inputs '5' ---> Values become <smallest>=0 and <larest>=5
+// this is because <0> is also compared.
+// we can ignore it since it is not one of the user inputs,
+// hence, in first input we set both smallest and largest value equal to the first input.

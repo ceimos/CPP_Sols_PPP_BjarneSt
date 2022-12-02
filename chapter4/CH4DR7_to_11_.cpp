@@ -44,15 +44,14 @@ int main()
             cout<<"The Sum of inputs so far : "<<input_sum<<" m \n";
 
             //Smallet-so-far and Largest-so-far -
+            if(input_no==1){larger=i;smaller=i;}
             if(i==smaller||i==larger){}
             else if(i<smaller)
             {
-                if(input_no==2){larger=smaller;}//Only needed for the second time.[1] more in the comments below.
                 smaller=i;
             }
             else if(i>larger)
             {
-                if(input_no==2){smaller=larger;} //Only needed for the second time.[1] more in the comments below.
                 larger=i;
             }
             cout<<"So far Largest Measurement : "<<larger<<" meter and Smallest Measurement : "<<smaller<<" meter \n"
