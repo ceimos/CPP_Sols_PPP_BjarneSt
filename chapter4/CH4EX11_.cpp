@@ -3,7 +3,7 @@
 
 #include ".\std_lib_facilities.h"
 
-vector<int> primes={2,3};
+vector<int> primes{2};
 
 int main()
 {
@@ -13,11 +13,10 @@ try
     {
         for(int z{0};z<primes.size();++z)
         {
-            if(i%primes[z]==0){primes.push_back(i);} //Every Number is divisible by 1 so we,dont include it
+            if(i%primes[z]==0){}
+            else{primes.push_back(i);}
         }
     }
-    primes.push_back(1); //one was not included earlier
-    sort(primes);
     cout<<"There Are : "<<primes.size()<<" Primes Between 1 and 100 \nAnd They are :- \n";
     for(int i:primes){cout<<i<<"  ";}
     cout<<"\n";
