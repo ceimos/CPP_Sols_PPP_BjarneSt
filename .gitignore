@@ -36,3 +36,8 @@
 *.pdb
 .vscode/
 resources/ 
+
+#Not to go to the repository.
+drills.cpp
+first.cpp
+trythis.cpp
