@@ -94,8 +94,10 @@ double secondary() //Factorial operation EXercise 3
     {
         if(t.type=='!')
         {
-            if(left==0) return 1;
-            for(int i=left-1;i>0;--i){left*=i;}
+            int x= left; //converts double to int, digits after decimal get truncated.
+            if(x==0) return 1;
+            for(int i=x-1;i>0;--i){x*=i;}
+            left=x; //converts integer to double, nothing gets truncated.
             t=ts.get();
         }
         else{
